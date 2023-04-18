@@ -15,10 +15,22 @@ function App(){
             <h2 key={i}>{i}</h2>
         )
       })}
-      {a.filter(i => i % 2 == 0).map((i)=>(<p>{i}</p>))}
+      {a.filter(i => i % 2 == 0).map((i)=>(<p>Even Numbers :{i}</p>))}
       <p>Objects Values : {b.name} {b.name}</p>
     </>
   );
 };
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+const carsModel = ["BMW","CRETA","SUV","JAGUAR","AUDI","MARUTI"]
+
+const Cars = () =>{
+  return(
+    <>
+    <ul>
+      {carsModel.map((model) =>(<h3><li>{model}</li></h3>))}
+    </ul>
+    </>
+  )
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<><App /><Cars /></>);
