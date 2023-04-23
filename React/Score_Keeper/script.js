@@ -76,7 +76,7 @@ const Result = () => (
 function handleSubmit(event) {
   event.preventDefault();
   const type = event.type;
-  console.log(type);
+  console.log(type);  
   ballWiseRes.unshift(
     // <span>
     //   {hit},{textInput.current.value}
