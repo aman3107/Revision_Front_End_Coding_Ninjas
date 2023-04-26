@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import {a,arr,obj} from './index'
+import greet  from './index';
 
 function App() {
   return (
@@ -22,5 +24,11 @@ function App() {
     </div>
   );
 }
+
+console.log(a);
+console.log(arr);
+console.log(obj);
+greet();
+// greet();
 
 export default App;
