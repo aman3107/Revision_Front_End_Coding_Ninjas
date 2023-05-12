@@ -1,36 +1,31 @@
-/* Write code for your CSS here */
-
-/* .App{
-    margin: 100px 100px;
-} */
-
-.Hero{
-    margin-left: 40px;
-    margin-top: 120px;
-    font-size: 20px;
-}
-.dots{
-    list-style-type: none;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.dots li{
-    display: inline-block;
-    margin-right: 25px;
-    padding-top: 10px ;
-    margin-top: 30px;
-    font-size: 20px;
+div {
+  width: 70%;
+  margin: 50px auto;
+  padding: 10px;
+  background-color: rgb(195, 255, 240);
 }
 
-.dots li span{
-    background-color: aqua;
-    padding: 10px;
-    border: 1px solid aqua;
-    border-radius: 5px;
+p {
+  font-size: 1.2rem;
 }
 
-.About{
-    margin-top: 60px;
-    margin-left: 40px;
-    font-size: 20px;
-    word-spacing: 10px;
+button {
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: rgb(34, 130, 255);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(0.95);
 }
