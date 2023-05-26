@@ -31,15 +31,66 @@
 
 /* Event Handling */
 
-function sayHello(){
-    alert('Hello');
-}
-function sayBye(){
-    alert('Bye!!');
-}
+// function sayHello(){
+//     alert('Hello');
+// }
+// function sayBye(){
+//     alert('Bye!!');
+// }
 
-var helloBtn1 = document.getElementById('btn1');
-helloBtn1.addEventListener('click', sayHello)
+// var helloBtn1 = document.getElementById('btn1');
+// helloBtn1.addEventListener('click', sayHello)
 
-var helloBtn2 = document.getElementById('btn2');
-helloBtn2.addEventListener('click',sayBye);
+// var helloBtn2 = document.getElementById('btn2');
+// helloBtn2.addEventListener('click',sayBye);
+
+/* Other Mouse And KeyBoard Events */   
+
+// var outerDiv = document.getElementById('outer');
+
+// outerDiv.addEventListener('mouseover', function(){
+//     console.log("Mouse Over");
+// });
+
+// outerDiv.addEventListener('mouseout',function(){
+//     console.log("Mouse Out");
+// });
+
+// var searchInput = document.getElementById('search');
+
+// searchInput.addEventListener('keypress',function(){
+//     console.log('Key Pressed');
+// });
+
+// document.addEventListener('keypress',function(){
+//     console.log('Key Pressed');
+// })
+
+// document.addEventListener('keyup',function(){
+//     console.log('Key Press')
+// })
+
+// document.addEventListener('keyup',function(event){
+//     console.log('Key Press',event.keyCode);
+// });
+
+/* Propagation of Event */
+
+// var innerDiv = document.getElementById('inner');
+// innerDiv.addEventListener('click',function(event){
+//     console.log('Click Inner Div');
+//     event.stopPropagation();
+// })
+
+// var outerDiv = document.getElementById('outer');
+// outerDiv.addEventListener('click',function(){
+//     console.log('Click Outer Div');
+// })
+
+// document.addEventListener('click',function(){
+//     console.log('click document');
+// });
+
+/* Strict Mode */
+
+/* More On Strict Mode */

@@ -2,6 +2,21 @@
 <html>
     <head>
         <title>Starting With JavaScript</title>
+        <style>
+            #outer{
+                width: 200px;
+                height: 200px;
+                margin: 50px;
+                background-color: red;
+                padding: 50px;
+                box-sizing: border-box;
+            } 
+            #inner{
+                width: 100px;
+                height: 100px;
+                background-color: cyan;
+            }
+        </style>
     </head>
     <body>
         <!-- <script src="script.js"></script> -->
@@ -11,8 +26,12 @@
         <h1 id="two">Heading</h1>
         <p class="para">Sample Paragraph.</p> -->
         <!-- <button id="btn" onclick="alert('Hello')">Say Hello!</button> -->
-        <button id="btn1">Button 1</button>
-        <button id="btn2" onclick="sayHello()">Button 2</button>
+        <!-- <button id="btn1">Button 1</button>
+        <button id="btn2" onclick="sayHello()">Button 2</button> -->
+        <div id="outer">
+            <div id="inner"></div>
+        </div>
+        <!-- <input type="text" name="search" id="search"> -->
         <script src="Understanding_DOM.js"></script>
     </body>
 </html>
