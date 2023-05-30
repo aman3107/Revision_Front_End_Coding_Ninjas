@@ -63,3 +63,49 @@
 
 /* Let in For Loops */
 
+// for(let i = 1; i <= 5; i++){
+//     console.log(i);
+// }
+
+// var arr = new Array(6);
+// for(let i = 1; i <= 5; i++){
+//     i++;
+//     arr[i] = function(){
+//         console.log(i);
+//     }
+//     i--;
+// }
+// arr[1];
+
+/* Arrow Functions */
+
+// var multiply = function(x,y){
+//     return x*y;
+// }
+// var a = multiply(10,20);
+// console.log(a);
+
+// var multiply1 = (x,y) =>{
+//     return x*y;
+// }
+// var b = multiply(10,20);
+// console.log(b);         
+
+// var double = (x) =>{
+//     return 2*x;
+// }
+// console.log(double(4))
+
+/* Bindings in Arrow Function */
+
+function person(name){
+    this.name = name;
+    console.log(this);
+    // setTimeout(function(){
+    //     console.log(this);
+    // },1000);
+    setTimeout(()=>{
+        console.log(this);
+    },1000);
+}
+var p = new person("Aman");
