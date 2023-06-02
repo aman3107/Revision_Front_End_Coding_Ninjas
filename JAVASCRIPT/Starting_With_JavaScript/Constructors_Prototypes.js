@@ -81,3 +81,54 @@
 // ask();
 
 
+/* Putting it all together */
+
+// var person = {
+//     fname:"Aman",
+//     ask:function(){
+//         console.log(this);
+//     }
+// }
+
+// new (person.ask.bind(person))();
+
+// const john = {
+//     name:  "John",
+//     greet: function(){
+//         console.log(  "Hello! My name is " + this.name) ;
+//     }
+// }
+
+// const CN = {
+//   name: "Coding Ninjas",
+//   printName: function(){
+//         console.log(this) ;
+//     }
+// };
+
+// var localGreet = CN.printName.bind(john);
+// localGreet();
+
+// var localPrintName = john.greet.bind(CN);
+// localPrintName();
+
+/* Function to create objects */
+
+// var student = {
+//     fname:'Aman',
+//     marks:50,
+//     rollNo:12
+// };
+
+// console.log(student);
+
+function createStudents(fname,rollNo,marks){
+    // var student = {};
+    this.fname = fname;
+    this.rollNo = rollNo;
+    this.marks = marks;
+    // return student;
+}
+
+var student1 = new createStudents('Aman',1,20);
+var student2 = new createStudents('Payal',2,30);
