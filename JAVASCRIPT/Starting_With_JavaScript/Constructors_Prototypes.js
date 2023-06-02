@@ -62,3 +62,22 @@
 
 /* 3rd rule Implicit Binding */
 
+// var raj = {
+//     name:'Aman',
+//     greet:function(){
+//         console.log('Hello',this);
+//     }
+// };
+
+// raj.greet();
+// var local = raj.greet;
+// local();
+
+/* 4th rule default binding */
+
+// function ask(){
+//     console.log(this,this.name);
+// }
+// ask();
+
+
