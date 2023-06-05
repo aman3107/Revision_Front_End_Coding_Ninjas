@@ -1,3 +1,4 @@
+'use strict'
 /* this Keyword */
 
 /* 1st Rule "new" keyword */
@@ -122,13 +123,32 @@
 
 // console.log(student);
 
-function createStudents(fname,rollNo,marks){
-    // var student = {};
-    this.fname = fname;
-    this.rollNo = rollNo;
-    this.marks = marks;
-    // return student;
-}
+// function createStudents(fname,rollNo,marks){
+//     var student = {};
+//     console.log(this);
+//     this.fname = fname;
+//     this.rollNo = rollNo;
+//     this.marks = marks;
+//     return student;
 
-var student1 = new createStudents('Aman',1,20);
-var student2 = new createStudents('Payal',2,30);
+// }
+
+// var student1 = new createStudents('Aman',1,20);
+// var student2 =  createStudents('Payal',2,30);
+
+
+/* Adding Behavior to Objects */
+
+// function Vehicle(numWheels, price){
+//     this.numWheels = numWheels;
+//     this.price = price;
+//     this.getPrice = function(){
+//         return this.price;
+//     }
+// }
+// var vehicle1 = new Vehicle(2,50000);
+// var vehicle2 = new Vehicle(4,50000);
+// console.log(vehicle1.getPrice());
+
+/* What is Prototype */
+
