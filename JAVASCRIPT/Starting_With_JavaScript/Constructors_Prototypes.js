@@ -152,3 +152,32 @@
 
 /* What is Prototype */
 
+// function Vehicle(numWheels, price){
+//     this.numWheels = numWheels;
+//     this.price = price;
+//     this.getPrice = function(){
+//         return this.price;
+//     }
+// }
+
+// var vehicle1 = new Vehicle(2,1000);
+// var vehicle2 = new Vehicle(3,1500);
+
+// console.log(Vehicle.prototype);
+// console.log(Vehicle.prototype.constructor);
+
+/* Why Prototype */
+
+function Vehicle(numWheels,price){
+    this.numWheels = numWheels;
+    this.price = price;
+}
+
+Vehicle.prototype.getPrice = function(){
+    return this.price;
+}
+
+var vehicle1 = new Vehicle(2,1000);
+var vehicle2 = new Vehicle(3,2000);
+
+Vehicle.prototype.color = "black";
